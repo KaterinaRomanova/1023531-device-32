@@ -3,21 +3,22 @@
   <head>
     <meta charset="utf-8">
     <title>Девайс</title>
+    <link rel="stylesheet" href="styles/style.css">
   </head>
   <body>
   <header class="header">
-    <div class="wrapper">
+    <div class="wrapper header__wrapper">
       <h1 class="visually-hidden">Магазин гаджетов</h1>
       <a href="#" class="logo">
-        <img src="" alt="Логотип магазина Device">
+        <img src="assets/image/device-logo.svg" alt="Логотип магазина Device" width="145px" height="36px">
       </a>
-      <nav class="header__navigation">
-        <div class="header__row">
+      <div class="header__navigation">
+        <div class="user-navigation header__row">
           <form class="search-form" action="https://echo.htmlacademy.ru/">
             <input type="text" placeholder="Поиск по сайту" name="search">
             <button type="submit">Найти</button>
           </form>
-          <ul class="user-navigation">
+          <ul class="user-navigation__list">
             <li class="user-navigation__item">
               <a href="#">Войти</a>
             </li>
@@ -28,81 +29,63 @@
               <a href="#">Сравнить</a>
             </li>
             <li class="user-navigation__item">
-              <a href="#">Корзина</a>
+              <a href="#">
+                <span>2</span> Корзина
+              </a>
             </li>
           </ul>
         </div>
-        <ul class="page-navigation header__row">
-          <li class="page-navigation__item">
-            <a href="catalog.html">Каталог товаров</a>
-            <ul class="products-category">
-              <li class="products-category__item">
-                <a href="#">Виртуальная реальность</a>
-              </li>
-              <li class="products-category__item">
-                <a href="#">Моноподы для селфи</a>
-              </li>
-              <li class="products-category__item">
-                <a href="catalog.html">Моноподы для селфи</a>
-              </li>
-              <li class="products-category__item">
-                <a href="#">Экшен камеры</a>
-              </li>
-              <li class="products-category__item">
-                <a href="#">Фитнес браслеты</a>
-              </li>
-              <li class="products-category__item">
-                <a href="#">Умные часы</a>
-              </li>
-              <li class="products-category__item">
-                <a href="#">Квадракоптеры</a>
-              </li>
-            </ul>
-          </li>
-          <li class="page-navigation__item">
-            <a href="#">Доставка</a>
-          </li>
-          <li class="page-navigation__item">
-            <a href="#">Гарантия</a>
-          </li>
-          <li class="page-navigation__item">
-            <a href="#">Контакты</a>
-          </li>
-        </ul>
-      </nav>
+        <nav class="page-navigation header__row">
+          <ul class="page-navigation__list">
+            <li class="page-navigation__item">
+              <a href="catalog.html">Каталог товаров</a>
+              <ul class="products-category">
+                <li class="products-category__item">
+                  <a href="#">Виртуальная реальность</a>
+                </li>
+                <li class="products-category__item">
+                  <a href="#">Моноподы для селфи</a>
+                </li>
+                <li class="products-category__item">
+                  <a href="catalog.html">Моноподы для селфи</a>
+                </li>
+                <li class="products-category__item">
+                  <a href="#">Экшен камеры</a>
+                </li>
+                <li class="products-category__item">
+                  <a href="#">Фитнес браслеты</a>
+                </li>
+                <li class="products-category__item">
+                  <a href="#">Умные часы</a>
+                </li>
+                <li class="products-category__item">
+                  <a href="#">Квадракоптеры</a>
+                </li>
+              </ul>
+            </li>
+            <li class="page-navigation__item">
+              <a href="#">Доставка</a>
+            </li>
+            <li class="page-navigation__item">
+              <a href="#">Гарантия</a>
+            </li>
+            <li class="page-navigation__item">
+              <a href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </header>
   <main>
     <section class="slider">
       <div class="wrapper">
-        <div class="slide-1">
-          <img class="slider__img" src="" alt="Дрон">
-          <button class="slider__button slider-prev">
-            <span class="visually-hidden">Предыдущее слайд</span>
-          </button>
-          <button class="slider__button slider-next">
-            <span class="visually-hidden">Следующий слайд</span>
-          </button>
+        <div class="slide__side">
+          <img class="slider__img" src="assets/image/slider-1.png" alt="Дрон" width="560" height="560">
           <div class="slider__info">
             <h2 class="slider__title title">Порхает как бабочка, жалит как пчела!</h2>
             <p class="slider__text text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-            <div class="slider__navigation">
-              <a class="button slider__button-more" href="#" >Подробнее</a>
-              <ol class="slider-pagination">
-                <li class="slider-pagination__item">
-                  <button class="slider-pagination__button slider-pagination__button_current"></button>
-                  <span class="visually-hidden">1</span>
-                </li>
-                <li class="slider-pagination__item">
-                  <button class="slider-pagination__button"></button>
-                  <span class="visually-hidden">2</span>
-                </li>
-                <li class="slider-pagination__item">
-                  <button class="slider-pagination__button"></button>
-                  <span class="visually-hidden">3</span>
-                </li>
-              </ol>
-            </div>
+            <a class="button slider__button-more" href="#" >Подробнее</a>
             <div class="slider__features">
               <div class="feature-item">
                 <p class="feature-item__value">800 м</p>
@@ -116,33 +99,13 @@
             <div class="slider__number">01</div>
           </div>
         </div>
-        <div class="slide-2">
-          <img class="slider__img" src="" alt="Фитнес-браслет">
-          <button class="slider__button slider-prev">
-            <span class="visually-hidden">Предыдущее слайд</span>
-          </button>
-          <button class="slider__button slider-next">
-            <span class="visually-hidden">Следующий слайд</span>
-          </button>
+        <div class="slide__side">
+          <img class="slider__img" src="assets/image/slider-2.png" alt="Фитнес-браслет">
           <div class="slider__info">
             <h2 class="slider__title title">Худеем правильно!</h2>
             <p class="slider__text text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
             <div class="slider__navigation">
-              <a class="button slider__button-more" href="#" >Подробнее</a>
-              <ol class="slider-pagination">
-                <li class="slider-pagination__item">
-                  <button class="slider-pagination__button"></button>
-                  <span class="visually-hidden">1</span>
-                </li>
-                <li class="slider-pagination__item">
-                  <button class="slider-pagination__button slider-pagination__button_current"></button>
-                  <span class="visually-hidden">2</span>
-                </li>
-                <li class="slider-pagination__item">
-                  <button class="slider-pagination__button"></button>
-                  <span class="visually-hidden">3</span>
-                </li>
-              </ol>
+            <a class="button slider__button-more" href="#" >Подробнее</a>
             </div>
             <div class="slider__features">
               <div class="feature-item">
@@ -153,33 +116,13 @@
             <div class="slider__number">02</div>
           </div>
         </div>
-        <div class="slide-3">
-          <img class="slider__img" src="" alt="Палки для селфи">
-          <button class="slider__button slider-prev">
-            <span class="visually-hidden">Предыдущее слайд</span>
-          </button>
-          <button class="slider__button slider-next">
-            <span class="visually-hidden">Следующий слайд</span>
-          </button>
+        <div class="slide__side">
+          <img class="slider__img" src="assets/image/slider-3.png" alt="Палки для селфи">
           <div class="slider__info">
             <h2 class="slider__title title">Делай селфи, как Бен Стиллер! </h2>
             <p class="slider__text text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
             <div class="slider__navigation">
-              <a class="button slider__button-more" href="#" >Подробнее</a>
-              <ol class="slider-pagination">
-                <li class="slider-pagination__item">
-                  <button class="slider-pagination__button"></button>
-                  <span class="visually-hidden">1</span>
-                </li>
-                <li class="slider-pagination__item">
-                  <button class="slider-pagination__button"></button>
-                  <span class="visually-hidden">2</span>
-                </li>
-                <li class="slider-pagination__item">
-                  <button class="slider-pagination__button slider-pagination__button_current"></button>
-                  <span class="visually-hidden">3</span>
-                </li>
-              </ol>
+            <a class="button slider__button-more" href="#" >Подробнее</a>
             </div>
             <div class="slider__features">
               <div class="feature-item">
@@ -198,10 +141,30 @@
             <div class="slider__number">03</div>
           </div>
         </div>
+        <button class="slider__button slider-prev">
+          <span class="visually-hidden">Предыдущее слайд</span>
+        </button>
+        <button class="slider__button slider-next">
+          <span class="visually-hidden">Следующий слайд</span>
+        </button>
+        <ol class="slider-pagination">
+          <li class="slider-pagination__item">
+            <button class="slider-pagination__button slider-pagination__button_current"></button>
+            <span class="visually-hidden">1</span>
+          </li>
+          <li class="slider-pagination__item">
+            <button class="slider-pagination__button"></button>
+            <span class="visually-hidden">2</span>
+          </li>
+          <li class="slider-pagination__item">
+            <button class="slider-pagination__button"></button>
+            <span class="visually-hidden">3</span>
+          </li>
+        </ol>
       </div>
     </section>
     <section class="products-category">
-      <div class="wrapper">
+      <div class="wrapper products-category__wrapper">
         <h2 class="visually-hidden">Наши продукты</h2>
         <ul class="product-list">
           <li class="product-item">
@@ -226,7 +189,7 @@
       </div>
     </section>
     <section class="services">
-      <div class="wrapper">
+      <div class="wrapper services__wrapper">
         <div class="delivery-service">
           <ul class="services-list">
             <li class="service-list__item">
@@ -281,12 +244,14 @@
       </div>
     </section>
     <section class="special-delivery">
-      <h2 class="visually-hidden">Специальная доставка</h2>
-      <a class="special-delivery__button" href="">Доставим редкий товар под заказ</a>
+      <div class="wrapper">
+        <h2 class="visually-hidden">Специальная доставка</h2>
+        <a class="special-delivery__button" href="">Доставим редкий товар под заказ</a>
+      </div>
     </section>
     <section class="about-company">
       <h2 class="visually-hidden">Информация о компании</h2>
-      <div class="wrapper">
+      <div class="wrapper about-company__wrapper">
         <section class="about-us">
           <h2 class="about-us__title title">О нас</h2>
           <p class="about-us__text text">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
@@ -317,7 +282,7 @@
       </div>
     </section>
     <section class="subscription">
-      <div class="wrapper">
+      <div class="wrapper subscription__wrapper">
         <h2 class="subscription__title title">Подпишитесь на рассылку</h2>
         <p class="subscription__text text">Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
         <form class="subscription__form" action="https://echo.htmlacademy.ru/" method="post">
@@ -329,7 +294,7 @@
     </section>
   </main>
   <footer class="footer">
-    <div class="wrapper">
+    <div class="wrapper footer__wrapper">
       <div class="footer__column">
         <a href="#" class="logo logo_colored">
           <img src="" alt="Логотип магазина Device">
@@ -365,7 +330,9 @@
       </div>
       <div class="footer__column">
         <a class="footer__phone" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
-        <a class="footer__academy-link" href="https://htmlacademy.ru/"><img src="" alt="html academy"></a>
+        <a class="footer__academy-link" href="https://htmlacademy.ru/">
+          <img src="assets/image/html-acaemy-logo.svg" alt="html academy">
+        </a>
       </div>
     </div>
   </footer>
