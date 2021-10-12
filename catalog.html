@@ -15,21 +15,21 @@
         <div class="header__navigation">
           <div class="user-navigation header__row">
             <form class="search-form" action="https://echo.htmlacademy.ru/">
-              <input type="text" placeholder="Поиск по сайту" name="search">
-              <button type="submit">Найти</button>
+              <input class="search-form__input" type="text" placeholder="Поиск по сайту" name="search">
+              <button class="search-form__button" type="submit">Найти</button>
             </form>
             <ul class="user-navigation__list">
               <li class="user-navigation__item">
-                <a href="#">Войти</a>
+                <a class="user-navigation__link user-navigation__link_login" href="#">Войти</a>
               </li>
               <li class="user-navigation__item">
-                <a class="hidden" href="">Выйти</a>
+                <a class="user-navigation__link user-navigation__link_logout hidden" href="">Выйти</a>
+              </li>
+              <li class="user-navigation__item ">
+                <a class="user-navigation__link user-navigation__link_compare" href="#">Сравнить</a>
               </li>
               <li class="user-navigation__item">
-                <a href="#">Сравнить</a>
-              </li>
-              <li class="user-navigation__item">
-                <a href="#">
+                <a class="user-navigation__link user-navigation__link_basket" href="#">
                   <span>2</span> Корзина
                 </a>
               </li>
@@ -38,39 +38,39 @@
           <nav class="page-navigation header__row">
             <ul class="page-navigation__list">
               <li class="page-navigation__item">
-                <a href="catalog.html">Каталог товаров</a>
-                <ul class="products-category">
+                <a class="page-navigation__link page-navigation__link_products-category" href="catalog.html">Каталог товаров</a>
+                <ul class="products-category__list hidden">
                   <li class="products-category__item">
-                    <a href="#">Виртуальная реальность</a>
+                    <a class="products-category__link" href="#">Виртуальная реальность</a>
                   </li>
                   <li class="products-category__item">
-                    <a href="#">Моноподы для селфи</a>
+                    <a class="products-category__link" href="#">Моноподы для селфи</a>
                   </li>
                   <li class="products-category__item">
-                    <a href="catalog.html">Моноподы для селфи</a>
+                    <a class="products-category__link" href="catalog.html">Моноподы для селфи</a>
                   </li>
                   <li class="products-category__item">
-                    <a href="#">Экшен камеры</a>
+                    <a class="products-category__link" href="#">Экшен камеры</a>
                   </li>
                   <li class="products-category__item">
-                    <a href="#">Фитнес браслеты</a>
+                    <a class="products-category__link" href="#">Фитнес браслеты</a>
                   </li>
                   <li class="products-category__item">
-                    <a href="#">Умные часы</a>
+                    <a class="products-category__link" href="#">Умные часы</a>
                   </li>
                   <li class="products-category__item">
-                    <a href="#">Квадракоптеры</a>
+                    <a class="products-category__link" href="#">Квадракоптеры</a>
                   </li>
                 </ul>
               </li>
               <li class="page-navigation__item">
-                <a href="#">Доставка</a>
+                <a class="page-navigation__link" href="#">Доставка</a>
               </li>
               <li class="page-navigation__item">
-                <a href="#">Гарантия</a>
+                <a class="page-navigation__link" href="#">Гарантия</a>
               </li>
               <li class="page-navigation__item">
-                <a href="#">Контакты</a>
+                <a class="page-navigation__link" href="#">Контакты</a>
               </li>
             </ul>
           </nav>
@@ -83,13 +83,13 @@
           <h2 class="inner-header__title title">Моноподы для селфи</h2>
           <ul class="breadcrumbs">
             <li class="breadcrumbs__item">
-              <a href="index.html">Главная</a>
+              <a class="breadcrumbs__link" href="index.html">Главная</a>
             </li>
             <li class="breadcrumbs__item">
-              <a href="">Каталог товаров</a>
+              <a class="breadcrumbs__link" href="">Каталог товаров</a>
             </li>
             <li class="breadcrumbs__item">
-              <a href="">Моноподы для селфи</a>
+              <a class="breadcrumbs__link" href="">Моноподы для селфи</a>
             </li>
           </ul>
         </div>
@@ -255,9 +255,9 @@
       <div class="wrapper footer__wrapper">
         <div class="footer__column">
           <a href="#" class="logo logo_colored">
-            <img src="" alt="Логотип магазина Device">
+            <img src="assets/image/device-logo.svg" alt="Логотип магазина Device">
           </a>
-          <p class="footer__text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+          <address class="footer__text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</address>
         </div>
         <div class="footer__column">
           <ul class="footer-navigation">
