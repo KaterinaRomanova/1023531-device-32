@@ -256,22 +256,24 @@
           <address class="contacts__text text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</address>
           <a class="contacts__phone" href="tel:+78128121212">7 (812) 812-12-12</a>
           <h3 class="subtitle contacts__subtitle">Время работы</h3>
-          <p class="contacts__text">пн—пт: с 10:00 до 22:00 сб—вс: с 10:00 до 19:00</p>
+          <p class="contacts__text">пн—пт: с 10:00 до 22:00 <br> сб—вс: с 10:00 до 19:00</p>
           <a href="#" class="button contacts__button">Напишите нам</a>
         </section>
       </div>
     </section>
     <section class="subscription">
       <div class="wrapper subscription__wrapper">
-        <div class="">
+        <div class="subscription__row">
           <h2 class="subscription__title title">Подпишитесь на рассылку</h2>
           <p class="subscription__text text">Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
         </div>
-        <form class="subscription__form" action="https://echo.htmlacademy.ru/" method="post">
-          <input class="subscription__input" type="email" name="subscription-email" id="subscription-email" placeholder="Ваш e-mail" required>
-          <button class="subscription__button" type="submit">Подписаться</button>
-        </form>
-        <p class="subscription__note text">Это бесплатно</p>
+        <div class="subscription__row">
+          <form class="subscription__form" action="https://echo.htmlacademy.ru/" method="post">
+            <input class="subscription__input" type="email" name="subscription-email" id="subscription-email" placeholder="Ваш e-mail" required>
+            <button class="subscription__button" type="submit">Подписаться</button>
+          </form>
+          <p class="subscription__note text">Это бесплатно</p>
+        </div>
       </div>
     </section>
   </main>
@@ -286,26 +288,26 @@
       <div class="footer__column">
         <ul class="footer-navigation">
           <li class="footer-navigation__item">
-            <a href="">Доставка</a>
+            <a class="footer-navigation__link" href="">Доставка</a>
           </li>
           <li class="footer-navigation__item">
-            <a href="">Гарантия</a>
+            <a  class="footer-navigation__link" href="">Гарантия</a>
           </li>
           <li class="footer-navigation__item">
-            <a href="">Контакты</a>
+            <a class="footer-navigation__link" href="">Контакты</a>
           </li>
         </ul>
         <ul class="footer__socials socials">
           <li class="socials__item">
-            <a href="#"></a>
+            <a class="socials__link" href="#"></a>
             <span class="visually-hidden">Фейсбук</span>
           </li>
           <li class="socials__item">
-            <a href="#"></a>
+            <a class="socials__link" href="#"></a>
             <span class="visually-hidden">Инстаграм</span>
           </li>
           <li class="socials__item">
-            <a href="#"></a>
+            <a class="socials__link" href="#"></a>
             <span class="visually-hidden">Твиттер</span>
           </li>
         </ul>
