@@ -192,6 +192,7 @@ body{
   flex-grow: 2;
   background: transparent url('../assets//image/search.svg') 12px 48% no-repeat;
   border: 2px solid transparent;
+  border-right: 0;
 }
 
 .search-form__input::placeholder{
@@ -206,22 +207,40 @@ body{
 }
 
 .search-form__input:focus-visible{
+  outline: none;
   border: 2px solid var(--action-focus-color);
 }
 
-.search-form__input:active{
+.search-form__input:active,
+.search-form__input:not(:placeholder-shown){
   border: 2px solid var(--main-black-color);
+}
+
+.search-form__input:not(:placeholder-shown) {
+  border-radius: 20px 0 0 20px;
+  border-right: none;
 }
 
 .search-form__button{
   width: 160px;
   background: transparent;
-  border: none;
-  border-left: 2px solid var(--main-black-color)
+  border: 2px solid var(--main-black-color);
+  border-radius: 0 20px 20px 0;
+  cursor: pointer;
 }
 
-.search-form__input:active:placeholder-shown {
-	border-left: 2px solid var(--main-black-color);
+.search-form__button:focus-visible{
+  outline: none;
+  border: 2px solid var(--action-focus-color);
+}
+
+.search-form__button:hover{
+  background-color: var(--main-black-color);
+  color: var(--main-white-color);
+}
+
+.search-form__button:active{
+  color: rgba(255, 255, 255, .3)
 }
 
 .search-form__input:placeholder-shown + .search-form__button {
@@ -571,6 +590,7 @@ body{
 .page-navigation__item_products-category:hover .products-category::after{
   background: url('../assets/image/minus.svg') no-repeat center
 }
+
 .page-navigation__item_products-category:hover .products-category__button{
   outline: none;
 }
@@ -642,7 +662,6 @@ body{
   margin-bottom: 70px;
   margin-top: -36px;
   position: relative
-
 }
 
 .slider__wrapper{
@@ -1000,64 +1019,74 @@ body{
   background-color: var(--main-light-color);
 }
 
+.special-delivery__text{
+  padding-top: 39px;
+  padding-bottom: 43px;
+  padding-right: 121px;
+  flex-grow: 1;
+  font-family: "Raleway", "Arial", sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 23px;
+  letter-spacing: 0.2em;
+  color:  var(--main-black-color);
+}
+
+.special-delivery__car-svg{
+  display: block;
+  box-sizing: border-box;
+  width: 125px;
+  height: 100px;
+  padding: 35px 39px;
+  background: var(--main-colored-color);
+}
+
+.special-delivery__info{
+  width: 40px;
+  height: 40px;
+  right: 33px;
+  top: 29px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: rgba(0, 0, 0, .3);
+  background: rgba(220, 220, 220, .5);
+}
+
 .special-delivery__button:hover{
   background-color: var(--main-bg-sort-color);
 }
 
-.special-delivery__button:hover::before{
+.special-delivery__button:hover .special-delivery__car-svg{
   background-color: var(--action-hover-color);
 }
 
-.special-delivery__button:hover::after{
-  opacity: 1;
+.special-delivery__button:hover .special-delivery__info{
+  color: var(--main-black-color);
+  background: var(--main-bg-filter-color)
 }
 
 .special-delivery__button:focus-visible{
   outline: 5px solid var(--action-focus-color);
 }
 
-.special-delivery__button:active{
+.special-delivery__button:active .special-delivery__text{
   opacity: .3;
   outline: none;
 }
 
-/* .special-delivery__button:active::before{
+.special-delivery__button:active .special-delivery__car-svg{
   background-color: var(--action-hover-color);
-  opacity: 1;
-} */
-
-.special-delivery__text{
-  padding-top: 37px;
-  padding-bottom: 43px;
-  flex-grow: 1;
-  font-weight: 800;
-  font-size: 20px;
-  text-align: center;
-  text-transform: uppercase;
-  line-height: 23px;
-  letter-spacing: 0.19em;
-  color:  var(--main-black-color);
+  fill: rgba(0, 0, 0, .3);
 }
 
-.special-delivery__button::before{
-  display: block;
-  width: 125px;
-  height: 100px;
-  content:'';
-  background: var(--main-colored-color) url("../assets/image/delivery-car.svg") no-repeat center;
-}
-
-.special-delivery__button::after{
-  width: 40px;
-  height: 40px;
-  right: 33px;
-  top: 29px;
-  position: absolute;
-  display: block;
-  border-radius: 50%;
-  content:'';
-  background: var(--main-bg-filter-color) url("../assets/image/info.svg") no-repeat center;
-  opacity: .5;
+.special-delivery__button:active .special-delivery__info{
+  background-color: var(--main-bg-filter-color);
+  color: rgba(0, 0, 0, .3);
 }
 
 /* About-company */
