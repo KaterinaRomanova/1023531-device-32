@@ -1680,6 +1680,16 @@ body{
   line-height: 20px;
 }
 
+.count-group__popover::before{
+  top: -6px;
+  left: 126px;
+  width: 14px;
+  height: 6px;
+  position: absolute;
+  content: '';
+  background: url(../assets/image/up-arrow.svg);
+}
+
 .modal__input-group{
   display: flex;
   background-color: var(--main-light-color);
