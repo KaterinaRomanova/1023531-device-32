@@ -4,14 +4,14 @@
     <meta charset="utf-8">
     <title>Девайс</title>
     <link rel="stylesheet" href="styles/style.css">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+    <link rel="icon" type="image/x-icon" sizes="32x32" href="favicon.ico">
   </head>
   <body>
     <header class="header">
       <div class="wrapper header__wrapper">
         <h1 class="visually-hidden">Магазин гаджетов</h1>
         <a class="header__logo" href="#">
-          <svg class="header__logo-svg" width="145" height="36" aria-label="Логотип Device.">
+          <svg class="header__logo-svg" width="145" height="36" role="img" aria-label="Логотип Device.">
             <use xlink:href="#device-logo"/>
           </svg>
         </a>
@@ -59,7 +59,7 @@
                     <p class="basket-popover__text">Товаров:<span class="basket-popover__total-item">2</span></p>
                     <p class="basket-popover__text">Сумма:<span class="basket-popover__amount">2000</span>₽</p>
                   </div>
-                  <button class="basket-popover__open-button button" type="button">Открыть корзину</button>
+                  <a class="basket-popover__open-button button" href="#">Открыть корзину</a>
                 </div>
               </li>
             </ul>
@@ -180,16 +180,19 @@
           </div>
           <ol class="slider-pagination">
             <li class="slider-pagination__item">
-              <button class="slider-pagination__button slider-pagination__button_current" type="button"></button>
-              <span class="visually-hidden">1</span>
+              <button class="slider-pagination__button slider-pagination__button_current" type="button">
+                <span class="visually-hidden">1</span>
+              </button>
             </li>
             <li class="slider-pagination__item">
-              <button class="slider-pagination__button" type="button"></button>
-              <span class="visually-hidden">2</span>
+              <button class="slider-pagination__button" type="button">
+                <span class="visually-hidden">2</span>
+              </button>
             </li>
             <li class="slider-pagination__item">
-              <button class="slider-pagination__button" type="button"></button>
-              <span class="visually-hidden">3</span>
+              <button class="slider-pagination__button" type="button">
+                <span class="visually-hidden">3</span>
+              </button>
             </li>
           </ol>
           <div class="slider-counter">01</div>
@@ -370,11 +373,10 @@
           <ul class="footer__socials socials">
             <li class="socials__item">
               <a class="socials__link socials__link_facebook" href="#">
-                <svg class="socials__img" width="9" height="18" role="img" aria-label="Facebook.">
+                <svg class="socials__img" width="9" height="18" role="img" aria-label="Фейсбук.">
                   <use xlink:href="#facebook"/>
                 </svg>
               </a>
-              <span class="visually-hidden">Фейсбук</span>
             </li>
             <li class="socials__item">
               <a class="socials__link socials__link_instagram" href="#">
@@ -382,7 +384,6 @@
                   <use xlink:href="#instagram"/>
                 </svg>
               </a>
-              <span class="visually-hidden">Инстаграм</span>
             </li>
             <li class="socials__item">
               <a class="socials__link socials__link_twitter" href="#">
@@ -390,7 +391,6 @@
                   <use xlink:href="#twitter"/>
                 </svg>
               </a>
-              <span class="visually-hidden">Твиттер</span>
             </li>
           </ul>
         </div>

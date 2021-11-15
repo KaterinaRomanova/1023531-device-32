@@ -394,7 +394,6 @@ img {
 }
 
 .basket-popover__open-button {
-  width: 280px;
   margin: 20px;
   margin-bottom: 22px;
   padding: 15px;
@@ -682,6 +681,7 @@ img {
 .slider__info {
   width: 560px;
   margin-top: 122px;
+  margin-bottom: 39px;
   z-index: 1;
 }
 
@@ -767,7 +767,7 @@ img {
 
 .slider-pagination {
   padding: 0;
-  top: 336px;
+  bottom: 162px;
   right: 36px;
   position: absolute;
   display: flex;
